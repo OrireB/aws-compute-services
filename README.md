@@ -18,7 +18,7 @@ This project demonstrates the use of AWS EC2, Load Balancer, and Auto Scaling se
 
 ## Configurations
 - **Security Group Rules**: SSH (22), HTTP (80)
-{
+ {
   "SecurityGroup": {
     "GroupName": "web-server-sg",
     "GroupId": "sgr-01f796921c89e2df0",
@@ -55,7 +55,7 @@ This project demonstrates the use of AWS EC2, Load Balancer, and Auto Scaling se
 }
 
 - **Auto Scaling Group**: 
-{
+ {
   "AutoScalingGroup": {
     "Name": "SG-TEST",
     "DesiredCapacity": 2,
@@ -93,19 +93,9 @@ sudo systemctl enable httpd
 ## Challenges Faced.
 - Auto Scaling configuration errors (resolved by reviewing target group health checks).
 
-## Screenshots:
-- Here are the key screenshots showing the steps:
+## Architectural Diagram:
+- Below is the Architectural Diagram showing the steps:
 
-- **Screenshot 1**: VPC Setup Dashboard
-  ![VPC Setup Screenshot](https://raw.githubusercontent.com/OrireB/aws-networking/3cef0a2ae108930d9b6bc584f64797e38a58b2b4/Screenshot%20(88).png)
+  ![Architectural Diagram](https://raw.githubusercontent.com/OrireB/aws-compute-services/42475b7f2476381848b1f304b931a8faaa9ecff2/Auto%20Scaling.drawio.png)
   
-- **Screenshot 2**: NAT Gateway
-  ![NAT Gateway Setup Screenshot](https://raw.githubusercontent.com/OrireB/aws-networking/3e2e23633de5cbccb0d82a12493a26715cf757bb/Screenshot%20(89).png)
-
-- **Screenshot 1**: Security Group
-  ![Security Group Setup Screenshot](https://raw.githubusercontent.com/OrireB/aws-networking/2b16f9e718367e510445534f1ba03811cc804b13/Screenshot%20(90).png)
-
-- **Screenshot 1**: NACL
-  ![NACL Setup Screenshot](https://raw.githubusercontent.com/OrireB/aws-networking/9e3ed322858e38a6d6e736f1bc9aa90dd52876d0/Screenshot%20(91).png)
-
 ---
